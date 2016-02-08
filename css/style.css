@@ -64,6 +64,10 @@ h1 {
   list-style-type: none;
 }
 
+.navigation ul li:hover {
+  text-decoration: underline;
+}
+
 .navigation ul a {
   display: block;
   padding: .5em 1em;
@@ -137,6 +141,15 @@ h1 {
   .toggle-btn,
   .close-btn {
     display: none;
+  }
+  .navigation ul {
+    padding: 0;
+    position: absolute;
+    top: -1em;
+    right: 1em;
+  }
+  li {
+    display: inline-block;
   }
 }
 

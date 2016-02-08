@@ -48,18 +48,18 @@ h1 {
   padding: 0;
   li {
     list-style-type: none;
-    &:first-child a{
-//      border-top: 1px solid $light-grey; 
+    &:hover {
+    text-decoration: underline;
     }
   }
   a {
     display: block;
     padding: .5em 1em;
-//    border-bottom: 1px solid $light-grey;
     text-decoration: none;
     color: $green;
     text-align: center;
   }
+  
 }
 
 .toggle-btn,
@@ -123,6 +123,16 @@ h1 {
   .toggle-btn,
   .close-btn {
     display: none;
+  }
+  
+  .navigation ul {
+    padding: 0;
+    position: absolute;
+    top: -1em;
+    right: 1em;
+  }
+  li {
+    display: inline-block;
   }
   
 }
