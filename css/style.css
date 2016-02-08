@@ -45,6 +45,11 @@ header {
   position: relative;
 }
 
+h1 {
+  color: #e5e5e5;
+  text-decoration: underline;
+}
+
 .toggle-btn {
   position: absolute;
   right: 1em;
@@ -59,22 +64,17 @@ header {
   list-style-type: none;
 }
 
-.navigation ul li:first-child a {
-  border-top: 1px solid #ccc;
-}
-
 .navigation ul a {
   display: block;
   padding: .5em 1em;
-  border-bottom: 1px solid #ccc;
   text-decoration: none;
-  color: #222;
+  color: #38ab96;
   text-align: center;
 }
 
 .toggle-btn,
 .close-btn {
-  color: #222;
+  color: #276ca3;
   text-decoration: none;
   height: 40px;
   width: 40px;
@@ -82,7 +82,6 @@ header {
 
 .toggle-btn:before,
 .close-btn:before {
-  border: 1px solid #ccc;
   display: inline-block;
   padding: 13px 11px;
   height: 40px;
