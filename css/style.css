@@ -54,6 +54,8 @@ h1 {
   position: absolute;
   right: 1em;
   top: 0;
+  color: white;
+  background-color: #276ca3;
 }
 
 .navigation ul {
@@ -70,15 +72,18 @@ h1 {
 
 .navigation ul a {
   display: block;
-  padding: .5em 1em;
+  padding: 1em;
   text-decoration: none;
   color: #38ab96;
-  text-align: center;
+  text-align: left;
+}
+
+.close-btn {
+  color: #276ca3;
 }
 
 .toggle-btn,
 .close-btn {
-  color: #276ca3;
   text-decoration: none;
   height: 40px;
   width: 40px;
@@ -101,7 +106,36 @@ h1 {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.billboard {
+  width: 100%;
+}
+
+h2 {
+  color: #276ca3;
+  text-align: center;
+  max-width: 600px;
+}
+
+footer p {
+  text-align: center;
+  color: #276ca3;
+  background-color: #e5e5e5;
+  padding: 1em 0;
+}
+
 /** Sliding Navigation */
+@media only screen and (min-width: 37.5em) {
+  h2 {
+    margin: 1em auto;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .navigation ul a {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 60em) {
   .site-wrapper {
     position: relative;
@@ -145,7 +179,7 @@ h1 {
   .navigation ul {
     padding: 0;
     position: absolute;
-    top: -1em;
+    top: -1.25em;
     right: 1em;
   }
   li {
